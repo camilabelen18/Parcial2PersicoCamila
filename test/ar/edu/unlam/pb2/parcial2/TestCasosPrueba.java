@@ -154,31 +154,31 @@ public class TestCasosPrueba {
 		
 	}
 
-//	@Test (expected = ProductoSinStock.class)
-//	public void queNoSePuedaVenderUnProductoSinStock() throws ProductoSinStock, ProductoInexistente {
-//		Supermercado vital = new Supermercado("Vital");
-//		
-//		vital.ingresarProducto(new Galletitas(1, "Cerealitas", "22/06/2021", "31/01/2022", "Arcor", 120.0));
-//		vital.ingresarProducto(new Galletitas(1, "Cerealitas", "22/06/2021", "31/01/2022", "Arcor", 120.0));
-//		vital.ingresarProducto(new Carne(2, "Tapa de nalga", "07/07/2021", "15/07/2021", 2.0, "La Estancia", 600.0));
-//		vital.ingresarProducto(new Televisor(3, "Serie Dorada", 42, 12, "Samsung", 200000.0));
-//		vital.ingresarProducto(new Heladera(4, "Nuevo Modelo", true, 12, "Samsung", 150000.0));
-//		vital.ingresarProducto(new Remera(5, "Básica", "XL", "Lacoste", "Azul", 2000.0));
-//		vital.ingresarProducto(new Zapatilla(6, "De running", "42", "Nike", "Blancas", 5000.0));
-//		vital.ingresarProducto(new Zapatilla(7, "Diarias", "45", "Topper", "Blancas", 2500.0));
-//		vital.ingresarProducto(new Televisor(8, "3D", 75, 12, "LG", 500000.0));
-//		vital.ingresarProducto(new Remera(9, "Básica", "L", "Lacoste", "Azul", 2000.0));
-//		vital.ingresarProducto(new Remera(9, "Básica", "M", "Lacoste", "Roja", 2000.0));
-//		vital.ingresarProducto(new Remera(9, "Básica", "S", "Lacoste", "Roja", 2000.0));
-//		vital.ingresarProducto(new Galletitas(10, "Oreo", "05/05/2021", "30/03/2022", "Arcor", 150.0));
-//		
-//		Integer numeroDeVenta = vital.registrarNuevaVenta(28923812, "Camila Ganzo");
-//		
-//		vital.agregarAlCarrito(numeroDeVenta, 1);
-//		vital.agregarAlCarrito(numeroDeVenta, 1);
-//		vital.agregarAlCarrito(numeroDeVenta, 1);
-//		
-//	}
+	@Test (expected = ProductoSinStock.class)
+	public void queNoSePuedaVenderUnProductoSinStock() throws ProductoSinStock, ProductoInexistente {
+		Supermercado vital = new Supermercado("Vital");
+		
+		vital.ingresarProducto(new Galletitas(1, "Cerealitas", "22/06/2021", "31/01/2022", "Arcor", 120.0));
+		vital.ingresarProducto(new Galletitas(1, "Cerealitas", "22/06/2021", "31/01/2022", "Arcor", 120.0));
+		vital.ingresarProducto(new Carne(2, "Tapa de nalga", "07/07/2021", "15/07/2021", 2.0, "La Estancia", 600.0));
+		vital.ingresarProducto(new Televisor(3, "Serie Dorada", 42, 12, "Samsung", 200000.0));
+		vital.ingresarProducto(new Heladera(4, "Nuevo Modelo", true, 12, "Samsung", 150000.0));
+		vital.ingresarProducto(new Remera(5, "Básica", "XL", "Lacoste", "Azul", 2000.0));
+		vital.ingresarProducto(new Zapatilla(6, "De running", "42", "Nike", "Blancas", 5000.0));
+		vital.ingresarProducto(new Zapatilla(7, "Diarias", "45", "Topper", "Blancas", 2500.0));
+		vital.ingresarProducto(new Televisor(8, "3D", 75, 12, "LG", 500000.0));
+		vital.ingresarProducto(new Remera(9, "Básica", "L", "Lacoste", "Azul", 2000.0));
+		vital.ingresarProducto(new Remera(9, "Básica", "M", "Lacoste", "Roja", 2000.0));
+		vital.ingresarProducto(new Remera(9, "Básica", "S", "Lacoste", "Roja", 2000.0));
+		vital.ingresarProducto(new Galletitas(10, "Oreo", "05/05/2021", "30/03/2022", "Arcor", 150.0));
+		
+		Integer numeroDeVenta = vital.registrarNuevaVenta(28923812, "Camila Ganzo");
+		
+		vital.agregarAlCarrito(numeroDeVenta, 1);
+		vital.agregarAlCarrito(numeroDeVenta, 1);
+		vital.agregarAlCarrito(numeroDeVenta, 1);
+		
+	}
 	
 	@Test 
 	public void queSePuedanObtenerLosProductosComestibles() {
